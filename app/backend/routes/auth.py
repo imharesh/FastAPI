@@ -9,6 +9,7 @@ from models.login_model import User
 from passlib.context import CryptContext
 from schemas.login_schemas import UserCreate, UserOut
 from sqlalchemy.orm import Session
+from passlib.context import CryptContext
 
 router = APIRouter()
 SECRET_KEY = os.getenv("SECRET_KEY")
